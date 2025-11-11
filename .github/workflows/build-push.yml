@@ -14,8 +14,8 @@ jobs:
     env:
       IMAGE_NAME: todo-ui
       IMAGE_TAG: v1
-      ACR_NAME: zincovit
-      ACR_LOGIN_SERVER: zincovit.azurecr.io
+      ACR_NAME: bisleryregistry
+      ACR_LOGIN_SERVER: bisleryregistry.azurecr.io
 
     steps:
       - name: Checkout code
@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v2.3.0
         with:
-          client-id: 7bb27921-093e-43ab-a7fa-31859082f7ef
-          tenant-id: ba820411-fb17-40b7-aa1e-e6bb2ba7b2da
-          subscription-id: c8ae0155-19b9-4306-a16f-ce3e1dab29f4
+          client-id: 98a5d83f-2395-4f35-8299-ed0f9893c80a
+          tenant-id: 9591fa99-2e99-45ae-a29c-c03af6ca6a98
+          subscription-id: 2a6429ab-34bc-4c09-812c-9e5d8ceee0d7
 
       - name: Log in to ACR
         run: |
